@@ -1,0 +1,14 @@
+{% extends 'global/base.html' %}
+
+{% block title %}
+        Alterar |
+{% endblock title %}
+        
+{% block content %}      
+        <h1 class='h1_home'><i>Home {{ name }}</i></h1>
+
+        <div class='container'>
+                <!-- Cards -->
+                {% include 'recipes/partials/recipe-unico.html' %}
+        </div>
+{% endblock content %}
