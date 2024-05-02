@@ -1,10 +1,10 @@
 <div class='col-md-6'>
     <div class='card meucard'>
-        <a href="{% url 'recipes-recipe' recipe.id %}" style="height: auto; width: auto; object-fit: cover;">
+        <a href="{% url 'recipes:recipe' recipe.id %}" style="height: auto; width: auto; object-fit: cover;">
             <img src='{{ recipe.cover.url}}' class='card-img-top' alt='...'>
         </a>
         <div class='card-body'>
-            <a href="{% url 'recipes-recipe' recipe.id %}">
+            <a href="{% url 'recipes:recipe' recipe.id %}">
                 <h5 class='card-title'>{{recipe.title}}</h5>
             </a>
             <p class='card-text'>{{ recipe.description }}</p>
@@ -40,7 +40,7 @@
             </div>
         </div>                    
         <div class="footet-button">
-            <a href="{% url 'recipes-recipe' recipe.id %}">
+            <a href="{% url 'recipes:recipe' recipe.id %}">
                 <i class="fas fa-eye"></i>
                 <span>Ver Mais...</span>
             </a>
