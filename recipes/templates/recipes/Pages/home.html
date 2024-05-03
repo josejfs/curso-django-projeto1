@@ -1,11 +1,22 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipes</title>
-</head>
+{% include 'recipes/Partials/head.html' %}
 <body>
-    
+    <center><h1>recipes/templates/Pages/home.html</h1></center>
+{% include 'recipes/Partials/header.html' %}
+{% include 'recipes/Partials/search.html' %}
+    <!-- Main Card -->
+    <main class="main-content-container">
+        <div class="main-content main-content-list container">
+{% include 'recipes/partials/recipe.html' %}
+{% include 'recipes/partials/recipe.html' %}
+{% include 'recipes/partials/recipe.html' %}
+{% include 'recipes/partials/recipe.html' %}
+{% include 'recipes/partials/recipe.html' %}
+{% include 'recipes/partials/recipe.html' %}
+{% include 'recipes/partials/recipe.html' %}
+{% include 'recipes/partials/recipe.html' %}
+{% include 'recipes/partials/recipe.html' %}
+        </div>
+    </main>
+{% include 'recipes/Pages/footer.html' %}
 </body>
 </html>
